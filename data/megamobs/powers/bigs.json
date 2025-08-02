@@ -1,0 +1,80 @@
+{
+    "type": "origins:multiple",
+    "size": {
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+			"attribute": "minecraft:generic.scale",
+			"id": "megamobs:bigsize",
+            "operation": "add_multiplied_base",
+			"amount": 1.0
+        }
+    },
+	"speed": {
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+			"attribute": "minecraft:generic.movement_speed",
+			"id": "megamobs:bigspeed",
+            "operation": "add_multiplied_base",
+			"amount": 0.2
+        }
+    },
+	"health": {
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+			"attribute": "minecraft:generic.max_health",
+			"id": "megamobs:bighealth",
+            "operation": "add_multiplied_base",
+			"amount": 1.0
+        }
+    },
+	"fall": {
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+			"attribute": "minecraft:generic.safe_fall_distance",
+			"id": "megamobs:bigfall",
+            "operation": "add_value",
+			"amount": 2.0
+        }
+    },
+	"jump": {
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+			"attribute": "minecraft:generic.jump_strength",
+			"id": "megamobs:bigjump",
+            "operation": "add_multiplied_base",
+			"amount": 0.3
+        }
+    },
+	"step": {
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+			"attribute": "minecraft:generic.step_height",
+			"id": "megamobs:bigstep",
+            "operation": "add_multiplied_base",
+			"amount": 0.5
+        }
+    },
+	"follow": {
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+			"attribute": "minecraft:generic.follow_range",
+			"id": "megamobs:bigfollow",
+            "operation": "add_multiplied_base",
+			"amount": 0.25
+        }
+    },
+	"strength": {
+		"type": "origins:modify_damage_dealt",
+		"modifier": {
+			"operation": "multiply_base_additive",
+			"amount": 1.0
+		}
+	},
+	"projectiles": {
+		"type": "origins:modify_projectile_damage",
+		"modifier": {
+			"operation": "multiply_base_additive",
+			"amount": 0.5
+		}
+	}
+}
